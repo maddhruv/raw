@@ -1,4 +1,3 @@
 import math
-r=10
-d=2*math.pi*r
-print(d)
+r=90
+degree
