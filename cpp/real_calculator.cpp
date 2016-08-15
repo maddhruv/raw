@@ -27,7 +27,6 @@ int main(){
       break;
     default:
       cout<<endl;
-
   }
   total = od;
   cin>>ot;
