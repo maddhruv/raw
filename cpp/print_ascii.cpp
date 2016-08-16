@@ -7,5 +7,4 @@ int main(){
   cout<<"Enter the character: "<<endl;
   cin>>a;
   cout<<"The ASCII value of "<<a;
-
 }
