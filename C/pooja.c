@@ -26,7 +26,7 @@ if(x>0&&x<=2000&&y>=0&&y<=2000)
 else{
 	printf("enter value bw 0-2000\n");
 	}
+	printf("\n");
 	return 0;
 
 	}
-	
