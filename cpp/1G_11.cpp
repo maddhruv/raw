@@ -10,4 +10,4 @@ class message{
 int main(){
   message ob;
   ob.msg();
-}
+}                                                                                 
