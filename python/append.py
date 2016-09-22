@@ -1,0 +1,10 @@
+a=['apple','potato']
+b=['tomato','banana']
+c=[]
+c.append(a)
+print(c)
+c.append(b)
+print(c)
+d=[]
+d.append(a[0])
+print(d)
