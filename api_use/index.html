@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="">
+ 	<p>Name: <input type="text" ng-model="search"></p>
+ 	<div id="video">
+ 	<script type="text/javascript">
+ 		var xhr = new XMLHttpRequest();
+ 		var url = "https://www.googleapis.com/youtube/v3/search?part=id&q=query&type=video&key=AIzaSyDf-TCgD54NNSlg_PbqeJyhXWhn0B4WBzw";
+
+xhr.open("GET", url, true);
+
+xhr.onreadystatechange = function() {
+	if (xhr.readyState === 4) {
+	    var status = xhr.status;
+
+	    if ((status >= 200 && status < 300) || status === 304) {
+	        var rss = JSON.parse(xhr.responseText);
+	        var el = document.getElementById('video');
+	        el.innerHTML = ('<iframe id="ytplayer" type="text/html" width="640" height="390" src="https://www.youtube.com/embed/'+rss.items[0].id.videoId+'?autoplay=1"  frameborder="0"></iframe>');
+	        //document.write();
+	        //alert(rss.items[0].id.videoId);
+	    } else {
+	        alert("Request unsuccessful");
+	    }
+	}
+};
+xhr.send(null);
+ 	</script>
+ 	</div>
+	
+	
+	</div>
+</body>
+</html>
