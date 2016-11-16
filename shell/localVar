@@ -1,0 +1,14 @@
+#!/bin/bash
+
+name="Dhruv"
+
+localFun(){
+	local name="Jain"
+	echo "$name"	
+	return
+}
+
+localFun
+
+echo "$name"
+
