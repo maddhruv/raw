@@ -1,0 +1,16 @@
+#!/bin/bash
+
+sum(){
+	n1=$1
+	n2=$2
+
+	sum=$((n1+n2))
+	echo $sum
+	return
+}
+
+a=2
+b=3
+
+sum=$(sum a b)
+echo $sum

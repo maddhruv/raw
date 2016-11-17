@@ -1,0 +1,6 @@
+#!/bin/bash
+
+read -p "Enter your name: " name
+# -p is for prompt input using a print string
+
+echo "Hello $name"

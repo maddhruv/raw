@@ -1,0 +1,13 @@
+#!/bin/bash
+
+read -p "Enter your age: " age
+
+if [ $age -ge 18 ]
+then
+	echo "You can vote"
+elif [ $age -eq 17 ]
+then
+	echo "Try next year"
+else
+	echo "You can't vote"
+fi

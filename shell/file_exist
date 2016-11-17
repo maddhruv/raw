@@ -1,0 +1,12 @@
+#!/bin/bash
+
+read -p "Enter the file name" file1
+
+file2="./"
+fileName=$((file2+file1))
+if [ -e "$fileName"]
+then 
+	echo "$file1 exists"
+else
+	vim $file1
+fi
