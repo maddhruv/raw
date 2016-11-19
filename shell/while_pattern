@@ -1,0 +1,15 @@
+#!/bin/bash
+
+num=1
+
+while [ $num -le 5 ]
+do
+a=1
+	while [ $a -le $num ]
+	do
+		echo "*"
+		a=$((a+1))
+	done
+	num=$((num+1))
+done
+
