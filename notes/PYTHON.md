@@ -50,3 +50,21 @@ F | same as f, but with uppercase letters
 ### Formatting Methods
 * tem = '{0}, {1}, {2}' > tem.format('a', 'b', 'c')
 * tem = '{a}, {b}, {c}' > tem.format(a='A', b='B', c='C')
+---
+## Lists and Dictionaries
+### Operations
+Operation | Interpretation
+--- | ---
+L.insert(i,x) | Insert element at *i* index
+L.index(X) | search element *X*
+L.count(X) | counts the appearance of *X*
+L.sort() | Sorting
+L.reverse() | Reversing
+D.keys() | All keys
+D.values() | All values
+D.items() | All keys+values tuples
+D.update(D2) | Merge by keys
+D.get(key, default?) | fetch by key, if absent default (or None)
+D.pop(key, defualt?) | remove by key, if absent default (or error)
+D.setdefault(key, default?) | fetch by key, if absent set default (or None)
+D.popitem() | remove/return any (key,value) pair
