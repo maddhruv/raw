@@ -68,3 +68,22 @@ D.get(key, default?) | fetch by key, if absent default (or None)
 D.pop(key, defualt?) | remove by key, if absent default (or error)
 D.setdefault(key, default?) | fetch by key, if absent set default (or None)
 D.popitem() | remove/return any (key,value) pair
+---
+## Tuples
+---
+## Files
+Operation | Interpretation
+--- | ---
+output = open('filename', 'w') | Create output file, 'w' means write
+input = open('data', 'r') | Create input file, 'r' means read
+input = open('data', 'rb') | binary file (bytes)
+aString = input.read() | read entire file into a single string
+aString = input.read(N) | read upto N character into a string
+aString = input.readline() | read next line (include \n) into a string
+aList = input.readlines() | read entire file into a list of line strings (with \n)
+output.write(aString) | write a string of characters into the file
+output.writelines(aList) | write all line strings in a list into the file
+output.close() | manually close
+output.flush() | flush output buffer to disk without closing
+anyFile.seek(N) | change the file position to offset N for next operation
+open('filename').readline().rstrip() | remove end-of-line
